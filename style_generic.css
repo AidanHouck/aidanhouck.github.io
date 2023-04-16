@@ -3,6 +3,11 @@
 	box-sizing: border-box;
 }
 
+/* Do not include scrollbar in width calculations */
+html {
+	width: 100vw;
+}
+
 body {
   font-size: 1.25em;
   font-family: "Helvetica", "Arial", sans-serif;
