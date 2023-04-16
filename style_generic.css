@@ -1,0 +1,82 @@
+/* Generic Things */
+* {
+	box-sizing: border-box;
+}
+
+body {
+  font-size: 1.25em;
+  font-family: "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+
+  color: #555;
+}
+
+/* Header/Footer iframe statically set height... not
+   sure what the better way to do this is... */
+.headeriframe {
+	height: 277.59px;
+}
+
+.footeriframe {
+	height: 74px;
+}
+
+iframe {
+	width: 100%;
+}
+
+/* Text elements */
+h1,h2,strong {
+  color: #333;
+}
+
+a {
+	color: #ca75ff;
+}
+
+
+/* Code Blocks */
+code,pre {
+	font-family: monospace;
+	background: #f5f7f9;
+	color: #a7adba;
+}
+
+pre {
+	counter-reset: line;
+	tab-size: 4;
+	padding: 1em;
+	border-left: 2px solid #69c;
+	border-bottom: 1px solid #d8dee9;
+}
+
+code {
+	counter-increment: line;
+}
+
+code:before {
+	content: counter(line);
+	padding-right: 1em;
+	display: inline-block;
+	width: 1em;
+}
+
+/* codeblock emphasis */
+pre b {
+  font-weight:normal;
+  color:#039;
+}
+
+/* codeblock strings */
+pre u, pre u b {
+  text-decoration:none;
+  color:#083;
+}
+
+/* codeblock comments */
+pre i, pre i *, pre i * * {
+  letter-spacing:-0.1em;
+  text-decoration:none;
+  font-style:normal;
+  color:#c55;
+}
