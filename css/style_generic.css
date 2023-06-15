@@ -9,11 +9,11 @@ html {
 }
 
 body {
-  font-size: 1.25em;
-  font-family: "Helvetica", "Arial", sans-serif;
-  line-height: 1.5;
+	font-size: 1.25em;
+	font-family: "Helvetica", "Arial", sans-serif;
+	line-height: 1.5;
 
-  color: #555;
+	color: #555;
 }
 
 /* Header/Footer iframe statically set height... not
@@ -31,14 +31,27 @@ iframe {
 }
 
 /* Text elements */
+.red {
+	color: red
+}
 h1,h2,strong {
-  color: #333;
+	color: #333;
+}
+
+h4 {
+	margin-top: 4px;
+	margin-bottom: 4px;
 }
 
 a {
 	color: #ca75ff;
 }
 
+/* Header lines */
+hr {
+	height: 2px;
+	color: #333;
+}
 
 /* Code Blocks */
 code,pre {
@@ -68,20 +81,20 @@ code:before {
 
 /* codeblock emphasis */
 pre b {
-  font-weight:normal;
-  color:#039;
+	font-weight:normal;
+	color:#039;
 }
 
 /* codeblock strings */
 pre u, pre u b {
-  text-decoration:none;
-  color:#083;
+	text-decoration:none;
+	color:#083;
 }
 
 /* codeblock comments */
 pre i, pre i *, pre i * * {
-  letter-spacing:-0.1em;
-  text-decoration:none;
-  font-style:normal;
-  color:#c55;
+	letter-spacing:-0.1em;
+	text-decoration:none;
+	font-style:normal;
+	color:#c55;
 }
