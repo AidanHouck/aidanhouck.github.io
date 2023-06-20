@@ -24,6 +24,12 @@ body {
 	color: #555;
 }
 
+@media only screen and (max-width: 1024px) {
+	body {
+		margin: 0;
+	}
+}
+
 /* Header/Footer items */
 .header {
 	padding: 1em;
