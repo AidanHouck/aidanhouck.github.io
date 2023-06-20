@@ -44,6 +44,9 @@ body {
 .nav {
 	position: sticky;
 	position: -webkit-sticky;
+	
+	display: flex;
+	justify-content: space-between;
 }
 
 .bar {
@@ -54,6 +57,7 @@ body {
 }
 
 .bar a, .bar p {
+	flex-grow: 1;
 	float: left;
 	display: block;
 	color: white;
