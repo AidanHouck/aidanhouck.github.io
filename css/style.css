@@ -83,6 +83,10 @@ body {
 }
 
 /* Text elements */
+.bold {
+	font-weight: bold;
+	font-size: 1.1em;
+}
 .red {
 	color: red
 }
@@ -95,9 +99,22 @@ body {
 	width: 50%;
 }
 
+.right {
+	float: right;
+}
+
 .caption {
 	font-size: 0.8rem;
 	text-align: center;
+}
+
+.caption-right {
+	font-size: 0.8rem;
+	text-align: right;
+}
+
+p.compact {
+	margin-bottom: 0.2rem;
 }
 
 h1,h2,h3 {

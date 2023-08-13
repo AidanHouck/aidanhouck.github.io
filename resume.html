@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Resume | Aidan Houck</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<script src="/js/include.js?src=/_header.html"></script>
+
+<!-- TODO, only load this JS on click? -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+	$("#_btnToPrint").live("click", function () {
+		var divContents = $("#_printMe").html();
+		var printWindow = window.open('', '', 'height=1200,width=1400');
+		printWindow.document.write('<html><head><title>Aidan Houck Resume</title>');
+		printWindow.document.write('<link rel="stylesheet" href="/css/style.css">');
+		printWindow.document.write('</head><body >');
+		printWindow.document.write(divContents);
+		printWindow.document.write('</body></html>');
+		printWindow.document.close();
+		//printWindow.print(); // Uncomment to auto-open system printing dialogue
+	});
+</script>
+
+<h2>Resume</h2>
+<hr>
+<p>Below is my current resume. Click here to export into a printable format: <a href="#" id="_btnToPrint">Print</a></p>
+<!-- TODO: Do some nicer CSS to make printed pages look better -->
+<!-- TODO: Nested Table-Header also has broken formatting -->
+
+<div id="_printMe"> <!-- beginning of what will be printed -->
+
+<h1><table style="width:100%"><tr>
+	<td>Aidan Houck</td>
+	<td>
+		<table style="width:100%" class="caption-right">
+			<tr>
+				<td>Dayton Metropolitan Area, Ohio, USA</td>
+			</tr>
+			<tr>
+				<td><a href="https://www.linkedin.com/in/aidanhouck/">linkedin.com/in/aidanhouck</a></td>
+			</tr>
+			<tr>
+				<td><a href="mailto: aidanhouck@gmail.com">aidanhouck@gmail.com</a></td>
+			</tr>
+		</table>
+	</td>
+</tr></table></h1>
+<hr>
+<p>&emsp;&emsp;Computer networking professional open to new and unique opportunities. Well versed with multiple equipment vendors and passionate about learning new things with an emphasis on details and problem solving.</p>
+
+<h3>Proficiencies</h3>
+<hr>
+<ul>
+	<li><p class="compact"><span class="bold">Vendors:</span> Cisco, Palo Alto, Meraki, Mikrotik, Dasan/Zhone, some Aruba, some Juniper</p></li>
+	<li><p class="compact"><span class="bold">Networking:</span> Access Layer Design, MultiGig Wireless, Routing, VLANs, Subnets</p></li>
+	<li><p class="compact"><span class="bold">VOIP:</span> CUCM, CUC, E911 Reporting, DID Porting, Dial Plans</p></li>
+	<li><p class="compact"><span class="bold">Fiber:</span> GPON, OTDR, Light Meters, VFLs, Optics and Patch Cables</p></li>
+	<li><p class="compact"><span class="bold">Linux:</span> Bash Scripting, Server Standup, Patch Management</p></li>
+	<li><p class="compact"><span class="bold">Windows:</span> Powershell Scripting, Exchange Mailboxes, NPS, GPO Maintenance</p></li>
+</ul>
+
+<h3>Experience</h3>
+<hr>
+<p class="compact"><span class="bold">Network Specialist</span><span class="right">Jul 2022 - Present</span></p>
+<p class="compact"><span class="bold">&emsp;&emsp;MVECA</span>, Yellow Springs, OH</p>
+<ul>
+	<li><p class="compact">Manage onboarding/upgrading customer networks supporting upwards of <span class="bold">6,000</span> users</p></li>
+	<li><p class="compact">Technical spearhead of a novel Fiber-to-the-Home GPON pilot project of <span class="bold">250</span> endpoints.</p></li>
+	<li><p class="compact">Responsible for cutting over new VOIP customers with <span class="bold">100 to 400</span> handsets each, including: planning, buildout, bulk updates, porting, documentation, and verification</p></li>
+	<li><p class="compact">Implement change requests for Palo Alto firewalls through Panorama management server</p></li>
+	<li><p class="compact">Guide training of new Service Technicians on internal systems, processes, and documentation</p></li>
+</ul>
+
+<p class="compact"><span class="bold">Service Technician</span><span class="right">Oct 2021 - Jun 2022</span></p>
+<p class="compact"><span class="bold">&emsp;&emsp;MVECA</span>, Yellow Springs, OH</p>
+<ul>
+	<li><p class="compact">Utilize ticketing systems, responding to incidents within SLA constraints</p></li>
+	<li><p class="compact">Complete VOIP handset change requests including updating displays, DIDs, hunt lists, and processing hardware returns</p></li>
+	<li><p class="compact">Process Active Directory and Exchange user additions, deletions, and mailing list modifications</p></li>
+	<li><p class="compact">Upkeep personal notes, documentation, and scripts during downtime</p></li>
+</ul>
+
+<p class="compact"><span class="bold">IT Summer Intern</span><span class="right">May 2021 - Jul 2021</span></p>
+<p class="compact"><span class="bold">&emsp;&emsp;Carrollton City School System</span>, Carroll County, GA</p>
+
+<h3>Education</h3>
+<hr>
+<p class="compact"><span class="bold">Cisco Certified Network Associate (CCNA)</span><span class="right">May 2021</span></p>
+<p class="compact"><span class="bold">Associate of Network Engineering</span><span class="right">Aug 2019 - May 2022</span></p>
+<p class="caption">Sinclair Community College, Dayton, OH</p>
+<p class="compact"><span class="bold">Highschool Diploma, Network Engineering and Cybersecurity Studies</span><span class="right">Aug 2019 - May 2021</span></p>
+<p class="caption">Miami Valley Career Technology Center (MVCTC), Clayton, OH</p>
+
+</div> <!-- end of printing block -->
+
+
+
+<script src="/js/include.js?src=/_footer.html"></script>
+</body></html>
