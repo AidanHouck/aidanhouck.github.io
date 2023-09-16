@@ -2,13 +2,13 @@
 	box-sizing: border-box;
 }
 
-/*.anon {
-	display: none;
-}*/
-
-.not-anon {
+.anon {
 	display: none;
 }
+
+/*.not-anon {
+	display: none;
+}*/
 
 @media print {
 	#pageborder {
