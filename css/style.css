@@ -2,6 +2,27 @@
 	box-sizing: border-box;
 }
 
+@media print {
+	#pageborder {
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		border-width: 0.2rem;
+		border-style: solid dashed;
+		border-color: #555;
+	}
+
+	body {
+		display: table;
+		table-layout: fixed;
+		height: auto;
+
+		margin: 0mm !important;
+	}
+}
+
 /* Do not include scrollbar in width calculations */
 html {
 	width: 100vw;
@@ -14,9 +35,12 @@ body {
 	max-width: 50rem;
 	padding: 1rem 1rem 1rem;
 	
-	border-width: 0.2rem;
-	border-style: solid dashed;
-	border-color: #555;
+	/* Disable page border when printing */
+	@media screen {
+		border-width: 0.2rem;
+		border-style: solid dashed;
+		border-color: #555;
+	}
 
 	font-family: "Helvetica", "Arial", sans-serif;
 	line-height: 1.3;
@@ -123,6 +147,7 @@ h1,h2,h3 {
 	margin-bottom: 0.1rem;
 	margin-left: 2rem;
 	margin-right: 2rem;
+	font-size: 1.5em;
 }
 
 h4 {
