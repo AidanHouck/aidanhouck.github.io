@@ -2,6 +2,14 @@
 	box-sizing: border-box;
 }
 
+/*.anon {
+	display: none;
+}*/
+
+.not-anon {
+	display: none;
+}
+
 @media print {
 	#pageborder {
 		position: fixed;
