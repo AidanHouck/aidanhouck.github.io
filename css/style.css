@@ -107,12 +107,21 @@ body {
 }
 
 /* Text elements */
+.big {
+	font-size: 2em;
+}
+
 .bold {
 	font-weight: bold;
 	font-size: 1.1em;
 }
+
 .red {
 	color: red
+}
+
+.blue {
+	color: #007fab;
 }
 
 .center {
