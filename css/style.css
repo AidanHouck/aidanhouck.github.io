@@ -32,6 +32,8 @@
 		table-layout: fixed;
 		height: auto;
 
+		background: transparent !important;
+
 		margin: 0mm !important;
 		padding: 0mm !important;
 		/*margin-top: 0mm !important;
