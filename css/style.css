@@ -155,7 +155,8 @@ body {
 }
 
 p.compact {
-	margin-bottom: 0.2rem;
+	margin-top: 0.1rem;
+	margin-bottom: 0.15rem;
 }
 
 h1,h2,h3 {
