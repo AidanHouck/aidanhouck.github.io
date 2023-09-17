@@ -11,6 +11,11 @@
 }*/
 
 @media print {
+	@page {
+		size: letter;
+		margin: 0.75in;
+	}
+
 	#pageborder {
 		position: fixed;
 		left: 0;
@@ -27,7 +32,10 @@
 		table-layout: fixed;
 		height: auto;
 
-		margin: 0mm !important;
+		margin-top: 0mm !important;
+		margin-bottom: 0mm !important;
+		padding-top: 0mm !important;
+		padding-bottom: 0mm !important;
 	}
 }
 
@@ -116,7 +124,7 @@ body {
 
 /* Text elements */
 .big {
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
 .bold {
